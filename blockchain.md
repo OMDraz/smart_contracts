@@ -1,4 +1,5 @@
 <!-- Lecture: https://www.youtube.com/watch?v=M576WGiDBdQ -->
+<!-- https://github.com/smartcontractkit/full-blockchain-solidity-course-py -->
 * Blockchain is a superior digital store of value
 * Scarce quantity 
 * Ethereum was a new protocol (different features with blockchains)
@@ -20,7 +21,7 @@
 * Transaction hashes are the keys of the transactions 
 * Everytime you do something, you need to pay in gas fees 
 * The blockchain can only process so many at a time, with high traffic, the high gas ones take priority 
-* Hash is a unique number needed to identify piece of data
+* Hash is a unique number needed to identify piece of  data
 * When block is mining, they are looking to find something that works for them to fit the hash
 * Prev -> points to the hash of the past block  [genesis block = previous hash 0000000]
 * Private key is used as a signature, and public key can verify the private key is the one
@@ -30,3 +31,4 @@
 * PoW = Proof of Stake = 
 * chain selection = nakamoto consensus (longest chain rule += proof of work // number of confirmations)
 * miners and validators (proof of work / stake) are the ones that get paid 
+<!-- * Used website: https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js -->
