@@ -1,4 +1,4 @@
-<!-- Lecture: https://www.youtube.com/watch?v=M576WGiDBdQ -->
+<!-- Lecture: https://www.youtube.com/watch?v=M576WGiDBdQ last stopped at 2:17:00 -->
 <!-- https://github.com/smartcontractkit/full-blockchain-solidity-course-py -->
 * Blockchain is a superior digital store of value
 * Scarce quantity 
