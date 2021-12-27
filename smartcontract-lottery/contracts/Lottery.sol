@@ -17,6 +17,7 @@ contract Lottery is VRFConsumerBase, Ownable {
         CLOSED,
         CALCULATING_WINNER
     }
+
     LOTTERY_STATE public lottery_state;
     uint256 public fee;
     bytes32 public keyHash;

@@ -1,5 +1,3 @@
-# Stopped at 6:27:00 https://www.youtube.com/watch?v=M576WGiDBdQ
-
 from brownie import Lottery, accounts, config, network
 from web3 import Web3
 
