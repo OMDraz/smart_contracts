@@ -1,5 +1,6 @@
-from scripts.helpful_scripts import get_account, get_contract
+from scripts.helpful_scripts import get_account, get_contract, fund_with_link 
 from brownie import Lottery, network, config
+import time 
 
 
 def deploy_lottery():
@@ -28,23 +29,23 @@ def start_lottery():
     print("The lottery has begun!")
 
 def enter_lottery():
-    # Step 1: Get the account
     account = get_account()
-    
-    # Step 2: Get the lottery
     lottery = Lottery[-1]
-    
-    # Step 3: Get the value for entering
     value = lottery.getEntranceFee + 100000000
-    
-    # Step 4: Deploy the function
-    enter_tx = lottery.enter({'from': account}, value: value))
-    
-    # Step 5: Wait a second 
+    enter_tx = lottery.enter({'from': account}, value: value)
     enter_tx(1)
-    
-    # Step 6: Print for completion
     print('You have entered the lottery!')
+    
+def end_lottery():
+    account = get_account()
+    lottery = Lottery[-1]
+    tx = fund_with_link(lottery.address)
+    tx.wait(1)
+    ending_transaction = lottery.endLottery({'from': account})
+    ending_transaction.wait(1)
+    time.sleep(60)
+    print(f"{lottery.recentWinner()} is the new winner!")
+    
 
 def main():
     deploy_lottery()
